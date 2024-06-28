@@ -1,0 +1,418 @@
+{
+	"info": {
+		"_postman_id": "bbda47e4-f627-410a-87d6-9457b2c38fbc",
+		"name": "school-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11191964"
+	},
+	"item": [
+		{
+			"name": "teachers",
+			"item": [
+				{
+					"name": "find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/teachers",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"teachers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Alejandro\",\n    \"lastName\":\"Aguilar\",\n    \"email\":\"alex@aguilar.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/teachers",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"teachers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Alejandro1\",\n    \"lastName\":\"Aguilar\",\n    \"email\":\"alex@aguilar.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/teachers/3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"teachers",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/teachers/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"teachers",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find-id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/teachers/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"teachers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "students",
+			"item": [
+				{
+					"name": "find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/students",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Alejandro\",\n    \"lastName\":\"Aguilar\",\n    \"email\":\"alex@aguilar.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/students",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Alejandro1\",\n    \"lastName\":\"Aguilar\",\n    \"email\":\"alex@aguilar.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/students/3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"students",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/students/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"students",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find-id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/students/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"students",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "classroom",
+			"item": [
+				{
+					"name": "find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/classrooms",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"classrooms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"clase 1\",\n    \"description\":\"una clase de prueba\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/classrooms",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"classrooms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"clase 111\",\n    \"description\":\"una clase de prueba\",\n    \"teacher\":1,\n    \"students\":[1,2]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/classrooms/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"classrooms",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/classrooms/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"classrooms",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find-id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/classrooms/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"classrooms",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "students",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/classrooms/1/students",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"classrooms",
+								"1",
+								"students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "assign-teacher",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"teacher\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/classrooms/1/assign-teacher",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"classrooms",
+								"1",
+								"assign-teacher"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "assign-students",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"students\":[1]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/classrooms/1/assign-students",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"classrooms",
+								"1",
+								"assign-students"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

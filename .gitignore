@@ -1,10 +1,12 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
+postgres
+mysql
+.vscode
 # Dependencies
 node_modules
 .pnp
 .pnp.js
-
+.vscode
 # Local env files
 .env
 .env.local
